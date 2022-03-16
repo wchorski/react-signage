@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* interactive slider */
+.slider{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: blue;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: blue;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.slide{
+  opacity: 0;
+  transition-duration: 1s ease;
+  transform: scale(0.95);
+}
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.0);
+}
+
+/* Image carosel */
+/* #img-cont{
+  background-color: rgba(25, 0, 255, 0.5);
+  border: 1px solid blue;
+  width: 100vw;
+  height: 100vh;
+}
+.frame{
+  background-color: rgba(255, 0, 0, 0.514);
+  border: 1px dotted red;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+img{
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+} */

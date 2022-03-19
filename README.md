@@ -1,7 +1,9 @@
+### BROKEN STATE !!!!
+
 # react-signage
 live full screen web page that scrolls through user created content
-. React Frontend
-. Express backend
+- React Frontend
+- Express backend
 
 # Feature Wishlist
 0. integrated file manager 

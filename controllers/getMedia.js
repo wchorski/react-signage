@@ -16,7 +16,7 @@ fs.readdir(mediaDir, function (err, files){
   // console.log(files);
   mediaFiles = files
 })
-
+//? ########
 
 // build frame elements
 // const img_cont = document.getElementById('img-cont')
@@ -33,12 +33,15 @@ mediaFiles.forEach( function (file) {
 })
 
 exports.getMedia = (req, res) => {
+  console.log('getMedia.js exp');
+
+
   // TODO get files
   // use fs & path to get file names
   // files names -> array of strings
   // array -> json
   // get component to push media
   res.json({
-    "hello": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
+    "media": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
   })
 }

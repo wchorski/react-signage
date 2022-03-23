@@ -1,9 +1,9 @@
 const express = require('express')
 router = express.Router()
 hello_cntr = require('../controllers/hello-cntr')
-// getMedia = require('../controllers/getMedia')
+getMedia_cntr = require('../controllers/getMedia-cntr')
 
-router.get('/', hello_cntr.hello_cntr_funct)
-// router.get('/signage', getMedia.getMedia)
+router.get('/hello-names',  hello_cntr.hello_cntr_funct)
+router.get('/media1',       getMedia_cntr.getMedia_cntr_funct)
 
 module.exports = router

@@ -1,0 +1,9 @@
+[Unit]
+Description=File Browser
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/filebrowser -c ~/Documents/vscode/react-signage/client/filebrowser/config.json
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+{
+  "port": 8080,
+  "baseURL": "",
+  "address": "127.0.0.1",
+  "log": "stdout",
+  "database": "/Users/wchor/Documents/vscode/react-signage/client/filebrowser/filebrowser.db",
+  "root": "/Users/wchor/Documents/vscode/react-signage/client/filebrowser/root"
+}

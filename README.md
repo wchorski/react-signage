@@ -1,16 +1,39 @@
-### BROKEN STATE !!!!
+*instructions are still a work in progress*
 
-# react-signage
+# react-signage 
 live full screen web page that scrolls through user created content
-- React Frontend
-- Express backend
+- React: frontend
+- Express: backend & api
+- filebrowser: end user file managment
+- raspberry pi kiosk: chromium full screen browser setup
+
+
+# [ Setup ]
+## React & Express - setup
+1. `npm i` - install npm packages with
+2. `npm start` - spin up React & Express
+
+## filebrowser - setup
+1. `cd ./client/filebrowser`
+2. `./install.sh` - intial install of filebrowser to a **Linux System**
+3. `./start.sh` 
+
+## kiosk - setup
+1. `cd ./client/kiosk`
+2. `./install.sh` - intial install of filebrowser to a **Raspberry Pi** *must use pi with Desktop Environment*
+3. `./start.sh`
 
 # Feature Wishlist
-0. integrated file manager 
+0. integrated file manager. password protected. ✅
 1. support files -> .mp4, .gif, .png, .jpg, .mp3
-2. Create Title & Text with choice of background. All editable with a web GUI 
+2. Create & edit hmtl slides with a web GUI. Create Title & Text with choice of background.
 3. build and select folders for quick "playlist" switching
-4. password protected file manager
+
+# Credits
+React front end & Express Backend <a href="https://www.youtube.com/watch?v=19CcxzZHwuI">youtube link - TheShow</a>
+React slideshow / carosel <a href="https://www.youtube.com/watch?v=l1MYfu5YWHc">youtube link - Brian Design</a>
+filebrowser setup <a href="read://https_tonyteaches.tech/?url=https%3A%2F%2Ftonyteaches.tech%2Ffilebrowser-tutorial%2F">Tony Teaches Tech</a>
+raspberry pi kiosk setup <a href="https://pimylifeup.com/raspberry-pi-kiosk/">Pi My Life Up</a>
 
 <details><summary>React "Get Started" info</summary><br/>
 

@@ -10,7 +10,7 @@ live full screen web page that scrolls through user created content
 
 # [ Setup ] 🛠
 ## React & Express - setup
-0. *you'll need <a href="https://nodejs.org/en/">node & npm</a> installed on the host machine*
+0. *you'll need <a href="https://nodejs.org/en/">node & npm</a> installed on the host machine. <a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp">raspberry pi nodejs install</a>*
 1. `cd react-signage/`
 2. `npm i` - install npm packages with
 3. `npm start` - spin up React & Express
@@ -23,7 +23,7 @@ live full screen web page that scrolls through user created content
 ## kiosk - setup
 1. `cd ./client/kiosk`
 2. `./install.sh` - intial install of filebrowser to a **Raspberry Pi** *must use pi with Desktop Environment*
-3. `./start.sh`
+3. `./start.sh`  
 
 # Feature Wishlist
 0. integrated file manager. password protected. ✅
@@ -31,7 +31,7 @@ live full screen web page that scrolls through user created content
 2. Create & edit html slides with a web GUI. Create Title & Text with choice of background.
 3. build and select folders for quick "playlist" switching
 4. GUI for 
-  - auto play speed tweak
+  - auto play speed tweaks
   - show / hide previous & advance slide arrow buttons.
   - a few options for previous & advance slide arrow buttons.
   - a few options for slide transitions. 

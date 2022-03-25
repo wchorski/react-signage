@@ -22,6 +22,6 @@ echo ">>>> 7 Advanced Options -> A5 Resolution"
 
 ### create service
 sudo cp ./kiosk.service /lib/systemd/system/
-sudo systemctl enable kiosk.service
+#sudo systemctl enable kiosk.service
 sudo systemctl start kiosk.service
 sudo systemctl status kiosk.service

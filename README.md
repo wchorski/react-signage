@@ -23,12 +23,14 @@ live full screen web page that scrolls through user created content
 0. `npm start` - spin up React & Express dev environment from **react-signage**'s root directory
 *i should probably put this all in one shell script*
 
-## filebrowser - LINUX setup
+## [filebrowser]https://github.com/filebrowser/filebrowser - LINUX setup
+*you can install filebrowser yourself or use my handy shell scripts. You're funeral*
 1. `cd ./client/filebrowser`
 2. `./install.sh` - intial install of filebrowser to a **Linux System**
 3. `./start.sh` 
 
-## kiosk - setup
+## [kiosk]https://pimylifeup.com/raspberry-pi-kiosk/ - setup
+*you can install the pi kiosk using pimylifeup's tutorial or use my handy shell scripts. You're funeral*
 1. `cd ./client/kiosk`
 2. `./install.sh` - intial install of filebrowser to a **Raspberry Pi** *must use pi with Desktop Environment*
 3. `./start.sh`  

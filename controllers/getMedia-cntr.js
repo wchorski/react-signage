@@ -5,7 +5,9 @@ const fs = require('fs')
 
 
 // update media
-const mediaDir = path.join(__dirname, '../client/react-frontend/public/media')
+//TODO if not using 'filebrowser' then use 'react-frontend''s public folder
+// const mediaDir = path.join(__dirname, '../client/react-frontend/public/media')
+const mediaDir = path.join(__dirname, '../client/filebrowser/root/media')
 let mediaJSON = { }
 
 fs.readdir(mediaDir, function (err, files){

@@ -3,7 +3,8 @@ app = express()
 
 require('dotenv').config()
 
-const PORT = process.env.PORT || 3001
+// create a `.env` with a PORT=3001
+const PORT = process.env.PORT || 3672
 app.listen(PORT, () => {
   console.log(`Listening on Port: ${PORT}`);
 })

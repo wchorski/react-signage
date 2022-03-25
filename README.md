@@ -10,12 +10,20 @@ live full screen web page that scrolls through user created content
 
 # [ Setup ] 🛠
 ## React & Express - setup
-0. *you'll need <a href="https://nodejs.org/en/">node & npm</a> installed on the host machine. <a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp">raspberry pi nodejs install</a>*
-1. `cd react-signage/`
-2. `npm i` - install npm packages with
-3. `npm start` - spin up React & Express
+*you'll need <a href="https://nodejs.org/en/">node & npm</a> installed on the host machine. <a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp">raspberry pi nodejs install</a>*
 
-## filebrowser - setup
+0. cd into **WHEREVER YOU'RE GONNA PUT IT**
+0. `git clone https://github.com/wchorski/react-signage.git`
+0. `cd ./react-signage/`
+0. `nano .env` - paste **PORT=3001** or you'll get the default port of *3672*. If having a weird port doesn't bother you then skip this step
+0. `npm i` - install backend packages
+0. `cd ./client/react-frontend`
+0. `npm i` - install react frontend packages
+0. `cd ..`
+0. `npm start` - spin up React & Express dev environment from **react-signage**'s root directory
+*i should probably put this all in one shell script*
+
+## filebrowser - LINUX setup
 1. `cd ./client/filebrowser`
 2. `./install.sh` - intial install of filebrowser to a **Linux System**
 3. `./start.sh` 
@@ -32,18 +40,19 @@ live full screen web page that scrolls through user created content
 2. Create & edit html slides with a web GUI. Create Title & Text with choice of background.
 3. build and select folders for quick "playlist" switching
 4. GUI for 
--  - auto play speed tweaks
+-  - auto play speed tweaks *right now autoPlay() hard coded to 4 seconds*
 -  - show / hide previous & advance slide arrow buttons.
 -  - a few options for previous & advance slide arrow buttons.
 -  - a few options for slide transitions. 
 5. HDMI CEC control
 # Credits
-React front end & Express Backend <a href="https://www.youtube.com/watch?v=19CcxzZHwuI">youtube link - TheShow</a>
-React slideshow / carosel <a href="https://www.youtube.com/watch?v=l1MYfu5YWHc">youtube link - Brian Design</a>
-filebrowser setup <a href="read://https_tonyteaches.tech/?url=https%3A%2F%2Ftonyteaches.tech%2Ffilebrowser-tutorial%2F">Tony Teaches Tech</a>
-raspberry pi kiosk setup <a href="https://pimylifeup.com/raspberry-pi-kiosk/">Pi My Life Up</a>
+- React front end & Express Backend <a href="https://www.youtube.com/watch?v=19CcxzZHwuI">youtube link - TheShow</a>
+- React slideshow / carosel <a href="https://www.youtube.com/watch?v=l1MYfu5YWHc">youtube link - Brian Design</a>
+- filebrowser setup <a href="read://https_tonyteaches.tech/?url=https%3A%2F%2Ftonyteaches.tech%2Ffilebrowser-tutorial%2F">Tony Teaches Tech</a>
+- raspberry pi kiosk setup <a href="https://pimylifeup.com/raspberry-pi-kiosk/">Pi My Life Up</a>
 
-<details><summary>React "Get Started" info</summary><br/>
+# ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ ♐️ 
+<details><summary>React "Get Started" default info</summary><br/>
 
   # Getting Started with Create React App
 

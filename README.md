@@ -1,6 +1,6 @@
 *instructions are still a work in progress*
 
-# react-signage 
+# react-signage ♐️
 live full screen web page that scrolls through user created content
 - React: frontend
 - Express: backend & api
@@ -8,10 +8,12 @@ live full screen web page that scrolls through user created content
 - raspberry pi kiosk: chromium full screen browser setup
 
 
-# [ Setup ]
+# [ Setup ] 🛠
 ## React & Express - setup
-1. `npm i` - install npm packages with
-2. `npm start` - spin up React & Express
+0. *you'll need <a href="https://nodejs.org/en/">node & npm</a> installed on the host machine*
+1. `cd react-signage/`
+2. `npm i` - install npm packages with
+3. `npm start` - spin up React & Express
 
 ## filebrowser - setup
 1. `cd ./client/filebrowser`
@@ -26,8 +28,13 @@ live full screen web page that scrolls through user created content
 # Feature Wishlist
 0. integrated file manager. password protected. ✅
 1. support files -> .mp4, .gif, .png, .jpg, .mp3
-2. Create & edit hmtl slides with a web GUI. Create Title & Text with choice of background.
+2. Create & edit html slides with a web GUI. Create Title & Text with choice of background.
 3. build and select folders for quick "playlist" switching
+4. GUI for 
+  - auto play speed tweak
+  - show / hide previous & advance slide arrow buttons.
+  - a few options for previous & advance slide arrow buttons.
+  - a few options for slide transitions. 
 
 # Credits
 React front end & Express Backend <a href="https://www.youtube.com/watch?v=19CcxzZHwuI">youtube link - TheShow</a>

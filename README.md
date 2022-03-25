@@ -26,16 +26,17 @@ live full screen web page that scrolls through user created content
 3. `./start.sh`  
 
 # Feature Wishlist
+0. ---> load all images into browser first. Not one at a time per click
 0. integrated file manager. password protected. ✅
 1. support files -> .mp4, .gif, .png, .jpg, .mp3
 2. Create & edit html slides with a web GUI. Create Title & Text with choice of background.
 3. build and select folders for quick "playlist" switching
 4. GUI for 
-  - auto play speed tweaks
-  - show / hide previous & advance slide arrow buttons.
-  - a few options for previous & advance slide arrow buttons.
-  - a few options for slide transitions. 
-
+-  - auto play speed tweaks
+-  - show / hide previous & advance slide arrow buttons.
+-  - a few options for previous & advance slide arrow buttons.
+-  - a few options for slide transitions. 
+5. HDMI CEC control
 # Credits
 React front end & Express Backend <a href="https://www.youtube.com/watch?v=19CcxzZHwuI">youtube link - TheShow</a>
 React slideshow / carosel <a href="https://www.youtube.com/watch?v=l1MYfu5YWHc">youtube link - Brian Design</a>

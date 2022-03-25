@@ -1,4 +1,5 @@
 #! /bin/bash
+# install for linux
 xset s noblank
 xset s off
 xset -dpms

@@ -11,6 +11,11 @@ let mediaJSON = { }
 fs.readdir(mediaDir, function (err, files){
   if (err) return console.log('can not read dir' + err)
 
+  //skip all dot files. create new "filtered array"
+  // filesFilter = files.forEach(file => {
+  //   if(file === ".*") return console.log("skip dot files");
+  // });
+
   mediaJSON = { "media": files}
 })
 

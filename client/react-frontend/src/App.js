@@ -12,7 +12,6 @@ function App() {
       {/* <BuildMedia/> */}
       {/* < Hello/> */}
       <ImageSlider slides={SliderData}/> 
-      <img src={logo} alt="logo"></img>
     </div>
   );
 }

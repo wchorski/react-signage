@@ -4,5 +4,5 @@
   "address": "0.0.0.0",
   "log": "stdout",
   "database": "/home/sign-admin/react-signage/client/filebrowser/filebrowser.db",
-  "root": "/home/sign-admin/react-signage/client/filebrowser/root"
+  "root": "/home/sign-admin/react-signage/client/react-frontend/public/root"
 }

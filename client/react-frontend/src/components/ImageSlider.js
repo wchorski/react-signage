@@ -32,7 +32,7 @@ export const ImageSlider = ({ slides }) => {
     await delay(speed)
     nextSlide()
   }
-  autoAdv(4)
+  //autoAdv(4)
 
 
   if(!Array.isArray(slides) || slides.length <= 0){ return null }
@@ -47,7 +47,7 @@ export const ImageSlider = ({ slides }) => {
           <ul className={index === current ? 'slide active' : 'slide'} key= {index}>
             { index === current && (
 
-              <img key={index} src={"./media/" + slide} alt={"slide " + (index + 1) + " out of " + slide.length } className='image'></img>
+              <img key={index} src={"../../../../filebrowser/root/media/" + slide} alt={"slide " + (index + 1) + " out of " + slide.length } className='image'></img>
 
             ) }
             

@@ -26,6 +26,7 @@ live full screen web page that scrolls through user created content
 ## [filebrowser]https://github.com/filebrowser/filebrowser - LINUX setup
 *you can install filebrowser yourself or use my handy shell scripts. You're funeral*
 1. `cd ./client/filebrowser`
+0. edit `filebrowser.service` with your /home/**USERNAME**/react-signage/client/filebrowser/config.json
 2. `./install.sh` - intial install of filebrowser to a **Linux System**
 3. `./start.sh` 
 

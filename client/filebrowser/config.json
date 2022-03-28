@@ -3,6 +3,6 @@
   "baseURL": "",
   "address": "0.0.0.0",
   "log": "stdout",
-  "database": "~/react-signage/client/filebrowser/filebrowser.db",
-  "root": "~/react-signage/client/filebrowser/root"
+  "database": "/home/sign-admin/react-signage/client/filebrowser/filebrowser.db",
+  "root": "/home/sign-admin/react-signage/client/filebrowser/root"
 }

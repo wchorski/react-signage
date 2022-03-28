@@ -21,7 +21,7 @@ echo ">>>> 7 Advanced Options -> A5 Resolution"
 #sudo raspi-config
 
 ### create service
-sudo cp ./kiosk.service /lib/systemd/system/
+sudo cp ./kiosk.service /etc/systemd/system/
 #sudo systemctl enable kiosk.service
 sudo systemctl start kiosk.service
 sudo systemctl status kiosk.service

@@ -1,10 +1,12 @@
-// import React, { useState } from 'react'
 import { React, useEffect, useState } from 'react'
 // import { SliderData } from './SliderData'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 
+
+let slideLength
+
 export const ImageSlider = ({ slides }) => {
-  console.log("ImageSlider.js Component");
+  // console.log("ImageSlider.js Component");
 
   //? Grab media from backend
   const [ initialState, setInitialState ] = useState( [] )
@@ -13,15 +15,19 @@ export const ImageSlider = ({ slides }) => {
       if(res.ok){
         return res.json()
       }
-    }).then(jsonResponse => setInitialState(jsonResponse.media))
+    }).then(jsonResponse => {
+      slideLength = jsonResponse.media.length
+      setInitialState(jsonResponse.media)
+    })
   }, [] )
+
+  // console.log("slideLenght = " + slideLength);
 
   //? Slider Control
   const [current, setCurrent] = useState(0)
-  const length = slides.length
 
-  const nextSlide = () => { setCurrent(current === length - 1 ? 0          : current + 1) }
-  const prevSlide = () => { setCurrent(current ===          0 ? length - 1 : current - 1) }
+  const nextSlide = () => { setCurrent(current === slideLength - 1 ? 0               : current + 1) }
+  const prevSlide = () => { setCurrent(current ===               0 ? slideLength - 1 : current - 1) }
 
   function delay(n){
     return new Promise(function(resolve){
@@ -32,10 +38,10 @@ export const ImageSlider = ({ slides }) => {
     await delay(speed)
     nextSlide()
   }
-  //autoAdv(4)
+  autoAdv(12)
 
 
-  if(!Array.isArray(slides) || slides.length <= 0){ return null }
+  if(!Array.isArray(slides) || slides.slideLength <= 0){ return null }
 
   return (
     <section className="slider">
@@ -47,7 +53,7 @@ export const ImageSlider = ({ slides }) => {
           <ul className={index === current ? 'slide active' : 'slide'} key= {index}>
             { index === current && (
 
-              <img key={index} src={"../../../../filebrowser/root/media/" + slide} alt={"slide " + (index + 1) + " out of " + slide.length } className='image'></img>
+              <img key={index} src={"./root/media/" + slide} alt={"slide " + (index + 1) + " out of " + slide.slideLength } className='image'></img>
 
             ) }
             

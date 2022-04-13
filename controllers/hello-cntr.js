@@ -3,7 +3,7 @@ const fs = require('fs')
 
 
 // update media
-const mediaDir = path.join(__dirname, '../client/react-frontend/public/media')
+const mediaDir = path.join(__dirname, '../client/react-frontend/public/root/media')
 // let mediaJSON = { }
 let mediaJSON_temp = { "hello":  ["chris", "ben", "zach", "damitri", "lucas", "bob", "eric", "tom", "perry"]}
 

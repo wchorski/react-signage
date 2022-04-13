@@ -6,6 +6,7 @@ live full screen web page that scrolls through user created content
 - Express: backend & api
 - filebrowser: end user file managment
 - raspberry pi kiosk: chromium full screen browser setup
+- JSON api. Automatically updates when media folder is changed
 
 
 # [ Setup ] 🛠
@@ -23,20 +24,20 @@ live full screen web page that scrolls through user created content
 0. `npm start` - spin up React & Express dev environment from **react-signage**'s root directory
 *i should probably put this all in one shell script*
 
-## [filebrowser]https://github.com/filebrowser/filebrowser - LINUX setup
+## [filebrowser](https://github.com/filebrowser/filebrowser) - LINUX setup
 *you can install filebrowser yourself or use my handy shell scripts. You're funeral*
-1. `cd ./client/filebrowser`
+0. `cd ./client/filebrowser`
 0. edit `filebrowser.service` with your /home/**USERNAME**/react-signage/client/filebrowser/config.json
-2. `./install.sh` - intial install of filebrowser to a **Linux System**
-3. `./start.sh` 
+0. `./install.sh` - intial install of filebrowser to a **Linux System**
+0. `./start.sh` 
 
-## [kiosk]https://pimylifeup.com/raspberry-pi-kiosk/ - setup
+## [kiosk](https://pimylifeup.com/raspberry-pi-kiosk/) - PiMyLifeUp setup
 *you can install the pi kiosk using pimylifeup's tutorial or use my handy shell scripts. You're funeral*
 1. `cd ./client/kiosk`
 2. `./install.sh` - intial install of filebrowser to a **Raspberry Pi** *must use pi with Desktop Environment*
 3. `./start.sh`  
 
-# Feature Wishlist
+## Feature Wishlist 🌠
 0. ---> load all images into browser first. Not one at a time per click
 0. integrated file manager. password protected. ✅
 1. support files -> .mp4, .gif, .png, .jpg, .mp3
@@ -48,7 +49,8 @@ live full screen web page that scrolls through user created content
 -  - a few options for previous & advance slide arrow buttons.
 -  - a few options for slide transitions. 
 5. HDMI CEC control
-# Credits
+
+## Credits
 - React front end & Express Backend <a href="https://www.youtube.com/watch?v=19CcxzZHwuI">youtube link - TheShow</a>
 - React slideshow / carosel <a href="https://www.youtube.com/watch?v=l1MYfu5YWHc">youtube link - Brian Design</a>
 - filebrowser setup <a href="read://https_tonyteaches.tech/?url=https%3A%2F%2Ftonyteaches.tech%2Ffilebrowser-tutorial%2F">Tony Teaches Tech</a>

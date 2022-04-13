@@ -1,3 +1,7 @@
+console.log('-------------------------------------------------------------')
+console.log("----------------------hello-rut.js---------------------------");
+console.log('-------------------------------------------------------------')
+
 const express = require('express')
 router = express.Router()
 hello_cntr = require('../controllers/hello-cntr')

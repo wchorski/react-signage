@@ -2,9 +2,9 @@
 
 # react-signage ♐️
 live full screen web page that scrolls through user created content
-- React: frontend <a href="http://localhost:3000">http://localhost:3000<a>
-- Express: backend & api <a href="http://localhost:3001/api/media1">http://localhost:3001/api/media1<a>
-- filebrowser: end user file managment
+- React: frontend <a href="http://localhost:3000">http://<HOST-IP>:3000<a>
+- Express: backend & api <a href="http://localhost:3001/api/media1">http://<HOST-IP>:3001/api/media1<a>
+- filebrowser: end user file managment <a href="http://localhost:8080">http://<HOST-IP>:8080<a>
 - raspberry pi kiosk: chromium full screen browser setup
 - JSON api. Automatically updates when media folder is changed
 
@@ -16,13 +16,17 @@ live full screen web page that scrolls through user created content
 0. cd into **WHEREVER YOU'RE GONNA PUT IT**
 0. `git clone https://github.com/wchorski/react-signage.git`
 0. `cd ./react-signage/`
-0. `nano .env` - paste **PORT=3001** or you'll get the default port of *3672*. If having a weird port doesn't bother you then skip this step
 0. `npm i` - install backend packages
 0. `cd ./client/react-frontend`
 0. `npm i` - install react frontend packages
 0. `cd ..`
 0. `npm start` - spin up React & Express dev environment from **react-signage**'s root directory
 *i should probably put this all in one shell script*
+
+# [ Caviats ]
+0. all images have to be .jpeg
+0. can *NOT* have spaces in the image file name 
+0. change autoscroll speed at *./client/react-frontend/src/components/ImageSlider.js* line 41 `autoAdv(5)`
 
 ## [filebrowser](https://github.com/filebrowser/filebrowser) - LINUX setup
 *you can install filebrowser yourself or use my handy shell scripts. You're funeral*

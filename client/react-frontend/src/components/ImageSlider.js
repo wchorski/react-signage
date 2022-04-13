@@ -38,7 +38,7 @@ export const ImageSlider = ({ slides }) => {
     await delay(speed)
     nextSlide()
   }
-  autoAdv(12)
+  autoAdv(5)
 
 
   if(!Array.isArray(slides) || slides.slideLength <= 0){ return null }

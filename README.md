@@ -2,8 +2,8 @@
 
 # react-signage ♐️
 live full screen web page that scrolls through user created content
-- React: frontend
-- Express: backend & api
+- React: frontend <a href="http://localhost:3000">http://localhost:3000<a>
+- Express: backend & api <a href="http://localhost:3001/api/media1">http://localhost:3001/api/media1<a>
 - filebrowser: end user file managment
 - raspberry pi kiosk: chromium full screen browser setup
 - JSON api. Automatically updates when media folder is changed

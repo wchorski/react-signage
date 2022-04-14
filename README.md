@@ -43,6 +43,7 @@ live full screen web page that scrolls through user created content
 
 ## Feature Wishlist 🌠
 0. ---> load all images into browser first. Not one at a time per click
+0. figure out how to get React Component to update without refreshing the whole page
 0. integrated file manager. password protected. ✅
 1. support files -> .mp4, .gif, .png, .jpg, .mp3
 2. Create & edit html slides with a web GUI. Create Title & Text with choice of background.

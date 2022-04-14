@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react'
 // import { SliderData } from './SliderData'
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/fa'
 
 
 let slideLength
@@ -51,8 +51,8 @@ export const ImageSlider = ({ slides }) => {
 
   return (
     <section className="slider">
-      <FaArrowAltCircleLeft  className='left-arrow'  onClick={prevSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+      <MdKeyboardArrowLeft  className='left-arrow'  onClick={prevSlide} />
+      <MdKeyboardArrowRight className='right-arrow' onClick={nextSlide} />
 
       {initialState.map((slide, index) => {
         return(

@@ -14,14 +14,13 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install xdotool unclutter sed
 
 ### raspi-config settings
-echo ">> boot / auto login to desktop. not CLI [sudo raspi-config]"
-echo ">>>>> 3 Boot Options -> B1 Desktop / CLI -> B4 Desktop Autologin"
-echo ">> set correct resolution of display [sudo raspi-config]"
-echo ">>>> 7 Advanced Options -> A5 Resolution"
+echo ">> 1 System Options > S5 Boot / auto login to desktop [sudo raspi-config]"
+echo ">> 7 Advanced Options > A5 Resolution"
 #sudo raspi-config
 
 ### create service
 sudo cp ./kiosk.service /etc/systemd/system/
-#sudo systemctl enable kiosk.service
+sudo cp ./start.sh /etc/kiosk-start.sh
+sudo systemctl enable kiosk.service
 sudo systemctl start kiosk.service
 sudo systemctl status kiosk.service

@@ -38,7 +38,13 @@ export const ImageSlider = ({ slides }) => {
     await delay(speed)
     nextSlide()
   }
-  autoAdv(5)
+  autoAdv(10)
+
+  async function refreshPage(speed){
+    await delay(speed)
+    window.location.reload(true);
+  }
+  refreshPage(35)
 
 
   if(!Array.isArray(slides) || slides.slideLength <= 0){ return null }

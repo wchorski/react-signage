@@ -8,7 +8,7 @@ curl -fsSLk https://raw.githubusercontent.com/filebrowser/get/master/get.sh | ba
 
 
 ### Linux
-echo "copy ./config.json -> /etc/filebrowser/config.json"
+echo "copy ./filebrowser-config.json -> /etc/filebrowser-config.json"
 sudo cp ./filebrowser-config.json  /etc/filebrowser-config.json
 
 echo "copy ./filebrowser.service -> /etc/systemd/system/"
@@ -16,6 +16,6 @@ sudo cp ./filebrowser.service /etc/systemd/system/
 sudo systemctl daemon-reload
 
 echo "[[ use 'sudo systemctl enable filebrowser.service' to make it persistant ]]"
-#sudo systemctl enable filebrowser.service
+sudo systemctl enable filebrowser.service
 sudo systemctl start filebrowser.service
 sudo systemctl status filebrowser.service

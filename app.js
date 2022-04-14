@@ -15,16 +15,16 @@ watcher.on('ready', () => {
   console.log('[[ Chokidar is now WATCHING ]]')
 })
 watcher.on('add', path => {
-  console.log(path, '[[ FILE ADDED ]]')
   getMedia_cntr.getMedia_cntr_funct
+  console.log(path, '[[ FILE ADDED ]]')
 })
 watcher.on('unlink', path => {
-  console.log(path, '[[ FILE REMOVED ]]')
   getMedia_cntr.getMedia_cntr_funct
+  console.log(path, '[[ FILE REMOVED ]]')
 })
 watcher.on('change', path => {
-  // console.log(path, '[[ FILE CHANGED ]]')
   getMedia_cntr.getMedia_cntr_funct
+  console.log(path, '[[ FILE CHANGED ]]')
 })
 //*  ######################################
 

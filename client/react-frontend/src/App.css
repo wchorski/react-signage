@@ -4,6 +4,19 @@ body{
   background-color: #282c34;
 }
 
+.updating{
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  position: absolute;
+	top: 50vh;
+  left: 40vw;
+	bottom: 0;
+	margin: auto;
+	height: 50vh;
+}
+
 .App {
   text-align: center;
 }
@@ -74,12 +87,12 @@ body{
   user-select: none;
 }
 .slide{
-  opacity: 0;
+  /* opacity: 1; */
   transition-duration: 1s ease;
-  transform: scale(0.95);
+  transform: scale(1.3);
 }
 .slide.active{
-  opacity: 1;
+  /* opacity: 1; */
   transition-duration: 1s;
   transform: scale(1.0);
 }

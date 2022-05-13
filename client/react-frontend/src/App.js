@@ -6,6 +6,15 @@ import './App.css';
 import { ImageSlider } from './components/ImageSlider'
 import { SliderData } from './components/SliderData';
 
+// const chokidar = require('chokidar')
+// const watcher = chokidar.watch('../../json/*.json', {
+//   persistent: true
+// })
+// watcher.on('change', path => {
+//   console.log(path, '[[ REACT FILE CHANGED ]]')
+//   window.location.reload(true)
+// })
+
 function App() {
   return (
     <div className="App">

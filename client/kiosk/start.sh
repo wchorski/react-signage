@@ -11,7 +11,8 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/sign-admin/.config/
 
 /usr/bin/chromium --noerrdialogs --disable-infobars --kiosk http://localhost:3000
 
-while true; do
-   xdotool keydown ctrl+R; xdotool keyup ctrl+R;
-   sleep 30
-done
+### simulate keypress (ctrl+R to refresh browser)
+# while true; do
+#    xdotool keydown ctrl+R; xdotool keyup ctrl+R;
+#    sleep 30
+# done

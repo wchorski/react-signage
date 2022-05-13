@@ -35,7 +35,7 @@ app.listen(PORT, () => {
 })
 
 
-app.use('/api/', require('./routes/hello-rut'))
+app.use('/api/', require('./routes/hello-rut') )
 
 
 // idk if this is even working because of React Frontend
